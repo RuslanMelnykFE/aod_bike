@@ -1,0 +1,6 @@
+mixin picture(link)
+    - var img_src = 'img/'  + link +  '@1x.jpg'
+    picture
+        source(srcset="img/" + link + "@1x.webp 1x, img/" + link + "@2x.webp 2x, img/" + link + "@3x.webp 3x", type="image/webp")
+        img(src=img_src, alt="background main", srcset="img/" + link + "@2x.jpg 2x, img/" + link + "@3x.jpg 3x")
+         

@@ -1,0 +1,36 @@
+@import './icon_burger';
+@import './menu';
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    z-index: 9000;
+    &__row {
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    @media (max-width: 767px) {
+        top: 15px;
+        &__row {
+            height: 36px;
+        }
+        &__logo {
+            left: 15px;
+            transform: translate(0,0);
+            img {
+                width: 40px;
+                height: 36px;
+            }
+        }
+    }
+}

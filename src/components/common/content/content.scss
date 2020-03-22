@@ -1,0 +1,24 @@
+// ========== Block fullscreen ============
+@import '../../fullscreen/fullscreen.scss';
+// ========== Block header ================
+@import '../header/header.scss';
+// ========== Block generetion ============
+@import './generetion/generetion.scss';
+// ========== Block brands ================
+@import './brands/brands.scss';
+// ========== Block slider ================
+@import './slider/slider.scss';
+// ========== Block shop ==================
+@import './shop/shop.scss';
+// ========== Block subscribe ==================
+@import './subscribe/subscribe.scss';
+// ========== Block footer ================
+@import '../footer/footer.scss';
+
+
+.page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

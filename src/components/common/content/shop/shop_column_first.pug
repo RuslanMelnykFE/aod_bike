@@ -1,0 +1,27 @@
+div(class="shop__column shop__column_big")
+    div(class="shop__block block-shop") 
+        .block-shop__row 
+            .block-shop__column 
+                a(href="#" class="block-shop__item block-shop__item_little item") 
+                    span.item__logo
+                        img(src="img/logos/logo_bicycles.png", alt="logo_bicycles") 
+                        | shop now
+                    span.item__image 
+                        include ../../../mixins/picture/picture.pug 
+                        +picture('shop/shop_sead_black1/shop_sead_black1') 
+            .block-shop__column
+                a(href="#" class="block-shop__item block-shop__item_little item") 
+                    span.item__logo
+                        img(src="img/logos/logo_bicycles.png", alt="logo_bicycles") 
+                        | shop now
+                    span.item__image 
+                        include ../../../mixins/picture/picture.pug 
+                        +picture('shop/shop_seads/shop_seads') 
+        a(href="#" class="block-shop__item item") 
+            span.item__logo
+                img(src="img/logos/logo_bicycles.png", alt="logo_bicycles") 
+                | shop now
+            span.item__image 
+                include ../../../mixins/picture/picture.pug 
+                +picture('shop/shop_sead_black2/shop_sead_black2') 
+        

@@ -1,0 +1,23 @@
+section.brands 
+    .brands__row 
+        div(class="brands__column brands__column_big") 
+            a(href="#" class="brands__item item") 
+                span.item__logo
+                    img(src="img/logos/logo_company.png", alt="logo_company")
+                span.item__image 
+                    include ../../../mixins/picture/picture.pug 
+                    +picture('brands/bicycle/bicycle')
+        .brands__column 
+            div(class="brands__content block") 
+                .block__icon 
+                    img(src="img/icons/icon_bicycle_frame.png", alt="icon_bicycle_frame")
+                h2.block__title vintage oliva 
+                div(class="block__text block__text_justify") 
+                    p 
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        | industry. Lorem Ipsum has been the industry's standard dummy text 
+                        | ever since the 1500s, when an unknown printer took a galley of type
+                        | and scrambled it to make a type specimen book. It has survived.
+            div(class="brands__image") 
+                include ../../../mixins/picture/picture.pug 
+                +picture('brands/bicycle_seat/bicycle_seat')

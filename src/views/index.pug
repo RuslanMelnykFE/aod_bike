@@ -1,0 +1,12 @@
+extends layouts/default 
+include helpers/mixins 
+
+block variables
+    - const title = "AOD bike"    
+
+block content
+    .wrapper
+        include ../components/common/content/content.pug
+
+block scripts
+    script(src="js/main.js")

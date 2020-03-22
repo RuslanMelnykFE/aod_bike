@@ -1,0 +1,26 @@
+section.shop 
+    .shop__body 
+        include shop_column_first.pug
+
+        .shop__column
+            a(href="#" class="shop__item shop__item_big item") 
+                span.item__logo
+                    img(src="img/logos/logo_bicycles.png", alt="logo_bicycles") 
+                    | shop now
+                span.item__image 
+                    include ../../../mixins/picture/picture.pug 
+                    +picture('shop/shop_rack/shop_rack')
+        .shop__column
+            a(href="#" class="shop__item shop__item_big item") 
+                span.item__logo
+                    img(src="img/logos/logo_bicycles.png", alt="logo_bicycles") 
+                    | shop now
+                span.item__image 
+                    include ../../../mixins/picture/picture.pug 
+                    +picture('shop/shop_bicycle/shop_bicycle')
+
+        include shop_column_last.pug
+
+    .shop__footer 
+        .container 
+            a(href="#" class="shop__button") discover the shop
